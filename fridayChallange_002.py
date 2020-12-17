@@ -6,6 +6,7 @@
 
 
 sum = 0
+steps = 0
 rng = 1000  #desired range
 n3 = 3      #number 1
 n5 = 5      #number 2
@@ -13,5 +14,7 @@ n5 = 5      #number 2
 for i in range(rng):
     if not i%n3 or not i%n5:
         sum += i
+        steps += 1
 
 print ("Sum of integer numbers in range of", rng, "which fully divide by",n3, "and", n5, "is equal to", sum)
+print ("Number of steps", steps)
