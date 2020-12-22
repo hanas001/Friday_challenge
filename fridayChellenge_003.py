@@ -1,9 +1,10 @@
 string = 'hello, how are you?'
 newString = []
 
-for i in range(len(string)):
+for i in range(len(string)+1):
     if i > 0:
-        print (i)
         newString.append(string[-i])
 
-print (newString)
+print (type(newString))
+#print (newString, sep="")  #for python 3
+print "".join(newString)    #for python 2.7
