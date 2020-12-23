@@ -6,5 +6,5 @@ for i in range(len(string)+1):
         newString.append(string[-i])
 
 #print (type(newString))
-#print (newString, sep="")  #for python 3
-print "".join(newString)    #for python 2.7
+print (newString, sep='')  #for python 3
+#print "".join(newString)    #for python 2.7
